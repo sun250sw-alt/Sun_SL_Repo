@@ -13,7 +13,7 @@ Kodi 21 (Omega) addon repository.
 ### Step 1 — Add source
 Settings → File Manager → Add source
 ```
-https://raw.githubusercontent.com/YOURUSERNAME/Sun_SL_Repo/main
+https://raw.githubusercontent.com/sun250sw-alt/Sun_SL_Repo/main
 ```
 Name it: `Sun SL Repo`
 
