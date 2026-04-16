@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<addon id="service.subtitles.translator"
+       name="Subtitle Translator"
+       version="1.0.0"
+       provider-name="SunSL">
+
+  <requires>
+    <import addon="xbmc.python" version="3.0.0"/>
+  </requires>
+
+  <extension point="xbmc.subtitle.module" library="service.py"/>
+
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en_GB">Subtitle Translator — Google Translate + Gemini AI</summary>
+    <description lang="en_GB">
+Translate any subtitle directly from the Download Subtitles menu using Google Translate (free, no setup) or Gemini AI (more accurate, natural dialogue).
+
+HOW TO USE:
+1. Play a video in Kodi
+2. Press T on keyboard (or open OSD and tap Subtitles - Download Subtitles)
+3. Select Subtitle Translator from the provider list
+4. Choose Browse for subtitle file or Browse Kodi temp folder
+5. Pick your SRT file
+6. Select your target language from the popup list
+7. Translation runs automatically and subtitle loads into the video
+
+SETTINGS (tap Settings inside the subtitle menu):
+- Gemini API Key: paste your free key here for better quality translation
+- Gemini Model: choose the model that fits your usage
+- Language: remembers your last used language automatically
+
+GEMINI AI SETUP (optional but recommended):
+1. Go to aistudio.google.com
+2. Sign in with your Google account
+3. Click Get API key and create a new key
+4. Open Kodi - Download Subtitles - Subtitle Translator - Settings
+5. Paste the key into Gemini API Key field
+6. Choose a model based on your needs
+
+GEMINI FREE MODELS:
+- Gemini 2.5 Flash: Best quality, 250 requests per day, around 10 movies per day
+- Gemini 2.5 Flash-Lite: Good quality, 1000 requests per day, around 43 movies per day
+- Gemini 2.5 Pro: Highest quality, 100 requests per day, around 4 movies per day
+- Daily limits reset at midnight Pacific Time
+- If limit is reached the addon automatically falls back to Google Translate
+
+WITHOUT GEMINI KEY:
+The addon uses Google Translate automatically. No setup needed, completely free, works for all languages.
+
+SUPPORTED FORMATS:
+- SRT subtitle files
+- ZIP files containing SRT (browse inside the ZIP natively)
+
+100+ languages supported.
+    </description>
+    <platform>all</platform>
+    <license>GPL-2.0-only</license>
+  </extension>
+
+</addon>
