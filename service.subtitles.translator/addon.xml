@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<addon id="service.subtitles.translator"
+       name="Subtitle Translator"
+       version="1.1.0"
+       provider-name="sun250sw-alt">
+
+  <requires>
+    <import addon="xbmc.python" version="3.0.0"/>
+  </requires>
+
+  <extension point="xbmc.subtitle.module" library="service.py"/>
+
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en_GB">Subtitle Translator — Gemini AI + Google Translate</summary>
+    <description lang="en_GB">
+Translate subtitles directly from the Kodi Download Subtitles menu.
+
+FEATURES:
+- Translate any SRT subtitle to 100+ languages
+- Gemini AI translation for natural, story-aware results
+- Google Translate fallback (free, no key needed)
+- Subtitle timing sync — adjust early or late subtitles
+- Custom time shift support
+- Remembers your last used language
+- Browse any folder or Kodi temp folder
+
+GEMINI AI SETUP (optional — for better translation quality):
+1. Go to aistudio.google.com
+2. Sign in with your Google account
+3. Click Get API Key then Create API Key
+4. Copy the key
+5. Open Download Subtitles in Kodi
+6. Tap Gemini API Key in the menu
+7. Paste your key using the keyboard
+
+GEMINI FREE TIER LIMITS:
+- Gemini 2.5 Flash: 250 requests per day (approx 10 movies)
+- Gemini 2.5 Flash-Lite: 1000 requests per day (approx 43 movies)
+- Gemini 2.5 Pro: 100 requests per day (approx 4 movies)
+- Limits reset daily at midnight Pacific Time
+- If limit reached, addon automatically falls back to Google Translate
+
+HOW TO USE:
+1. Play a video in Kodi
+2. Press T or open OSD Subtitles Download Subtitles
+3. Select Subtitle Translator from the provider list
+4. Browse for your SRT or ZIP subtitle file
+5. Select target language
+6. Select timing adjustment if needed
+7. Translation runs automatically and subtitle loads into video
+    </description>
+    <platform>all</platform>
+    <license>GPL-2.0-only</license>
+    <news>
+      v1.1.0 - Added Gemini AI support, timing sync, custom time shift
+      v1.0.0 - Initial release with Google Translate
+    </news>
+  </extension>
+
+</addon>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<addon id="repository.sun_sl_repo"
+       name="Sun SL Repository"
+       version="1.0.0"
+       provider-name="sun250sw-alt">
+
+  <requires>
+    <import addon="xbmc.python" version="3.0.0"/>
+  </requires>
+
+  <extension point="xbmc.addon.repository" name="Sun SL Repository">
+    <info compressed="false">https://raw.githubusercontent.com/sun250sw-alt/Sun_SL_Repo/main/addons.xml</info>
+    <checksum>https://raw.githubusercontent.com/sun250sw-alt/Sun_SL_Repo/main/addons.xml.md5</checksum>
+    <datadir zip="true">https://raw.githubusercontent.com/sun250sw-alt/Sun_SL_Repo/main/</datadir>
+    <assets>
+      <icon>https://raw.githubusercontent.com/sun250sw-alt/Sun_SL_Repo/main/repository.sun_sl_repo/icon.png</icon>
+    </assets>
+  </extension>
+
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en_GB">Sun SL Repository</summary>
+    <description lang="en_GB">Sun SL Repository by sun250sw-alt. Kodi 21 Omega subtitle translation addons powered by Gemini AI and Google Translate.</description>
+    <platform>all</platform>
+    <license>GPL-2.0-only</license>
+  </extension>
+
+</addon>
