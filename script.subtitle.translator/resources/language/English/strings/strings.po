@@ -1,6 +1,0 @@
-msgid ""
-msgstr ""
-
-msgctxt "#32000"
-msgid "Subtitle Translator"
-msgstr ""
